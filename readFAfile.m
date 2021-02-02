@@ -1,4 +1,14 @@
+
 function inall=readFAfile(FAfile)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% readFAfile: read GEA CowView system FA files
+% Description: Read in the FA files, Setup the Import Options and import 
+% the data, specify the column names to "FA","id", "id1", "time", "x", "y", "z". 
+% Print out the file's start time and end time.
+% Useage: inall=readFAfile(FAfile);
+% Athor: Keni Ren
+% Example: data=readFAfile('.\Data\FA_20200915T000000UTC');
+
 %% Setup the Import Options and import the data
 opts = delimitedTextImportOptions("NumVariables", 7);
 
